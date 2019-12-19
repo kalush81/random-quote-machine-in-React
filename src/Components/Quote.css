@@ -1,0 +1,23 @@
+.main-box {
+    margin: 200px auto;
+    padding: 50px;
+    width: 500px;
+    height: auto;
+    border: 1px solid red;
+  }
+  .quote-text {
+    border: 1px solid green;
+  }
+  .quote-author {
+    display: block;
+    border: 1px solid green;
+    text-align: right;
+  }
+  .ikon {
+    display: inline;
+  }
+  .footer-wrapper {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+  }
