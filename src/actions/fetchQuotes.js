@@ -1,7 +1,7 @@
 
-export function quotesFetched(data) {
+export function quotesFetched(quotes) {
     return {
       type: "FETCH_QUOTES",
-      payload: data
+      payload: quotes
     };
 }
