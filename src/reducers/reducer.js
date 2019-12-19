@@ -1,7 +1,7 @@
-export default quotesReducer = (state=[], action) => {
+export default function quotesReducer (state = [], action)  {
     switch(action.type) {
         case 'FETCH_QUOTES':
-            return action.quotes;
+            return action;
         default:
             return state;    
     }
