@@ -2,6 +2,7 @@ import React from "react";
 import QuoteContainer from './Components/QuoteContainer';
 import "./App.css";
 
+
 function App() {
   return (
     <div className="App">
