@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 class DisplayQuotesBox extends Component {
   state = {
-    idx: 0
+    idx: this.props.idx
   };
 
   setRandIndex = () => {
@@ -11,17 +11,14 @@ class DisplayQuotesBox extends Component {
       idx: Math.floor(Math.random() * (this.props.quotes.length - 0 + 1) + 0)
     });
   };
-  componentWillReceiveProps() {
-      this.props.quotes && this.setState({idx: 10})
-  }
+  
   render() {
     const { quotes } = this.props;
     const { idx } = this.state;
     
     return (
       <div>
-          {console.log('quotes in render',quotes)}
-        {quotes && quotes.length > 0 ?(
+        {quotes && (
           <div className="main-box">
             <div className="text-author-wrapper">
               <h2 className="quote-text">{quotes[idx].quote}</h2>
@@ -35,7 +32,7 @@ class DisplayQuotesBox extends Component {
               <button onClick={this.setRandIndex}>get new quote</button>
             </div>
           </div>
-        ) : '...load'}
+        )}
       </div>
     );
   }
