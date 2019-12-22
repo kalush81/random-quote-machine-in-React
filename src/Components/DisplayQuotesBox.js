@@ -45,7 +45,7 @@ class DisplayQuotesBox extends Component {
                 <Button className="ikon" style={{background:color}}><FontAwesomeIcon icon={faThumbsUp}/></Button>
                 <Button className="ikon" style={{background:color}}><FontAwesomeIcon icon={faThumbsDown}/></Button>
               </div>
-              <Button style={{background:color}} onClick={()=>this.setRandIndex()}>get new quote</Button>
+              <Button style={{background:color}} onClick={()=>this.setRandIndex()}>Get new quote my beloved Domi</Button>
             </div>
           </div>
         )}
