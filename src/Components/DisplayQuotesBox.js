@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faHashtag, faThumbsUp, faThumbsDown, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import Button from 'react-bootstrap/Button';
 
 class DisplayQuotesBox extends Component {
   state = {
@@ -33,15 +37,15 @@ class DisplayQuotesBox extends Component {
         {quotes && (
           <div className="main-box">
             <div className="text-author-wrapper">
-              <h2 className={classNamesArr.join(' ')} style={{color}}>{quotes[idx].quote}</h2>
-              <em className="quote-author">- {quotes[idx].author}</em>
+              <h2 className={classNamesArr.join(' ')} style={{color}}><FontAwesomeIcon icon={faQuoteLeft}/> {quotes[idx].quote}</h2>
+              <em className="quote-author" style={{color}}>- {quotes[idx].author}</em>
             </div>
             <div className="footer-wrapper">
               <div className="ikon-wrapper">
-                <i className="ikon">i</i>
-                <i className="ikon">i</i>
+                <Button className="ikon" style={{background:color}}><FontAwesomeIcon icon={faThumbsUp}/></Button>
+                <Button className="ikon" style={{background:color}}><FontAwesomeIcon icon={faThumbsDown}/></Button>
               </div>
-              <button onClick={()=>this.setRandIndex()}>get new quote</button>
+              <Button style={{background:color}} onClick={()=>this.setRandIndex()}>get new quote</Button>
             </div>
           </div>
         )}

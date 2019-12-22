@@ -25,7 +25,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App" style={{ backgroundColor: this.state.color }}>
-        <h1>Hello random quote</h1>
         <QuoteContainer color={this.state.color} getColor={this.getRandomColor}/>
       </div>
     );

@@ -1,15 +1,16 @@
 .main-box {
-    margin: 200px auto;
+    margin: 0 auto;
     padding: 50px;
     width: 500px;
     height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    border-radius: 5px;
     background-color: #fff;
   }
   
   .fade-in {
     opacity: 1;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     animation-name: fading;
     animation-duration: 2s;
   }
@@ -19,7 +20,7 @@
   }
   .fade-out {
     opacity: 1;
-    border: 1px solid green;
+    
     animation-name: fading2;
     animation-duration: 2s;
   }
@@ -29,17 +30,38 @@
   }
   .quote-author {
     display: block;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     text-align: right;
-  }
-  .ikon {
-    display: inline;
-    padding: 15px;
-    background-color: green;
   }
   .footer-wrapper {
     margin: 20px 0;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
+    height: 35px;
   }
+  .ikon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+  }
+  .ikon {
+    width: 30px;
+    padding: 10px;
+    background-color: green;
+  }
+  .footer-wrapper button {
+    padding: 10px;
+    background-color: green;
+  }
+  .ikon , button{
+    border: none !important;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+  }
+  .ikon:focus {outline:0;}
+  .ikon:active {
+    outline: 0;
+    border: 0;
+    }
