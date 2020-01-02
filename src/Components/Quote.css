@@ -40,10 +40,25 @@
     justify-content: space-between;
     height: 35px;
   }
+  @media (max-width: 500px) {
+    .footer-wrapper {
+      flex-wrap: wrap;
+    }
+    .ikon-wrapper {
+      margin: 20px 0;
+      min-width: 100%;
+    }
+    .main-box {
+      padding-bottom: 100px;
+    }
+    .guzik {
+      margin: 0 auto;
+    }
+  }
   .ikon-wrapper {
+    width: 70px;
     display: flex;
     justify-content: space-between;
-    width: 70px;
   }
   .ikon {
     width: 30px;
